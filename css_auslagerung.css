@@ -80,14 +80,12 @@ body:after {
 
 
 
-#vidz {
+.vidz {
   font-family: Arial;
   font-size: 0.9em;
   width: 60%;
-  background: transparent;
   padding: 10 0 0 0;
   margin: auto;
-  overflow: hidden;
   text-align: center;
   display: block;
 }
@@ -164,19 +162,18 @@ a.realtext:visited {
 #bilder img {
   padding: 10px;
 }
+
+
 .prebilder {
   font-family: Arial;
-  width: 100%;
-  padding-left: 42px;
-  /*	background: #2F5E10;   ohne background-angabe wird's transparent */
-  overflow: auto;
-  margin: auto;
-  text-align: center;
   font-size: 2.3em;
-  color: #5CB81F;
+  color: #2F5E10;
+  display: inline-block;
+  background: transparent url("grfx/shade2.png") repeat scroll 0% 0%;
+  width: 70%;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
 }
-
-
 
 
 
@@ -192,7 +189,7 @@ a.realtext:visited {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 5 auto;
+  margin: 0px auto 5px auto;
   display: inline-block;
   #float: left;
   background: url('grfx/shade2.png');
