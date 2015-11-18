@@ -1,115 +1,123 @@
 <style type="text/css">
 
 /* Referenz: www.noobcube.com/tutorials/html-css/fixed-header-footer-layout-a-beginners-guide-/
-	Bild zentrieren: brunildo.org/test/img_center.html */
+Bild zentrieren: brunildo.org/test/img_center.html */
 
 body {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		}
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 html {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		}
-		
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 img  		{
-		border: none
-		}
-		
-		
-		
-		
-		
-		
-#imange {
-	width: 77px;
-	height: 351px;
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 15px;
-	z-index: 1000;
-	background: url('grfx/nav.png') no-repeat;
-	text-align: center;
-	}
+  border: none
+}
 
 
 
+
+
+
+.imange {
+  width: 77px;
+  height: 351px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 15px;
+  z-index: 1000;
+  background: url('grfx/nav.png') no-repeat;
+  text-align: center;
+}
+
+.imange a {
+  display: block;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.imange a img {
+  width: 40px;
+  height: 40px;
+}
 
 
 
 #container1 {
-		width: 100%;
-		min-height: 100%;
-		margin: auto;
-		background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
-		padding-bottom: 20px;
-		}
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
+  padding-bottom: 20px;
+}
 
 
 
 
 
 #vidz {
-	font-family: Arial;
-	font-size: 0.9em;
-	width: 60%;
-	background: transparent;
-	padding: 10 0 0 0;
-	margin: auto;
-	overflow: hidden;
-	text-align: center;
-	display: block;
-	}
-	
+  font-family: Arial;
+  font-size: 0.9em;
+  width: 60%;
+  background: transparent;
+  padding: 10 0 0 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+
 
 #text {
-	font-family: Arial;
-	font-size: 0.9em;
-	width: 60%;
-	background: transparent;
-	padding: 20 0 0 0;
-	margin: auto;
-	overflow: hidden;
-	}
+  font-family: Arial;
+  font-size: 0.9em;
+  width: 60%;
+  background: transparent;
+  padding: 20 0 0 0;
+  margin: auto;
+  overflow: hidden;
+}
 
 #text2 {
-	width: 100%;
-	padding-left: 0px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	background: #2F5E10  url('grfx/bg_grad2.jpg') repeat-x;
-	margin: auto;
-	overflow: auto;
-	}
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background: #2F5E10  url('grfx/bg_grad2.jpg') repeat-x;
+  margin: auto;
+  overflow: auto;
+}
 
 #realtext{
-	font-size: 1.1em;
-	background: url('grfx/shade2.png');
-	padding: 25px;
-	#text-align: justify;
-	}
+  font-size: 1.1em;
+  background: url('grfx/shade2.png');
+  padding: 25px;
+  #text-align: justify;
+}
 #realtext h3{
-	text-align: center;
-	font-size: 1.3em;
-	}
+  text-align: center;
+  font-size: 1.3em;
+}
 a.realtext:link {
-	color: #90DC8C;
-	text-decoration: none;
-	}
+  color: #90DC8C;
+  text-decoration: none;
+}
 a.realtext:visited {
-	color: #6AB48D;
-	text-decoration: none;
-	}
-	
+  color: #6AB48D;
+  text-decoration: none;
+}
+
 
 #transtext {
-	color: rgba(255, 255, 255, 0.5);
-	font-size: 18pt;
-	}
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18pt;
+}
 
 
 
@@ -118,117 +126,117 @@ a.realtext:visited {
 
 
 #bilder {
-	font-family: Arial;
-	font-size: 0.9em;
-	text-align: center;
-	width: 100%;
-	# padding-left: 95px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	background: #102449 url('grfx/bg_grad.jpg') repeat-x;
-	margin: auto;
-	overflow: auto;
-	}
+  font-family: Arial;
+  font-size: 0.9em;
+  text-align: center;
+  width: 100%;
+  # padding-left: 95px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background: #102449 url('grfx/bg_grad.jpg') repeat-x;
+  margin: auto;
+  overflow: auto;
+}
 
 #bilderhead {
-	margin-right: 90px;
-	}
+  margin-right: 90px;
+}
 
 #bilder img {
-	padding: 10px;
-	}
+  padding: 10px;
+}
 .prebilder {
-	font-family: Arial;
-	width: 100%;
-	padding-left: 42px;
-/*	background: #2F5E10;   ohne background-angabe wird's transparent */
-	overflow: auto;
-	margin: auto;
-	text-align: center;
-	font-size: 2.3em;
-	color: #5CB81F;
-	}
-	
-	
-	
-	
-	
-	
+  font-family: Arial;
+  width: 100%;
+  padding-left: 42px;
+  /*	background: #2F5E10;   ohne background-angabe wird's transparent */
+  overflow: auto;
+  margin: auto;
+  text-align: center;
+  font-size: 2.3em;
+  color: #5CB81F;
+}
+
+
+
+
+
+
 #schrieb {
-	margin: 0 auto;
-	}
+  margin: 0 auto;
+}
 
 #ikone	{
-		font-variant: small-caps;
-		font-weight: bold;
-		padding-bottom: 5px;
-		padding-top: 15px;
-		padding-left: 15px;
-		padding-right: 15px;
-		margin: 5 auto;
-		display: inline-block;
-		#float: left;
-		background: url('grfx/shade2.png');
-		text-align: center;
-		}
+  font-variant: small-caps;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5 auto;
+  display: inline-block;
+  #float: left;
+  background: url('grfx/shade2.png');
+  text-align: center;
+}
 a.ikone:link {
-	color: #112657;
-	text-decoration: none;
-	}
+  color: #112657;
+  text-decoration: none;
+}
 a.ikone:visited {
-	color: #392048;
-	text-decoration: none;
-	}
+  color: #392048;
+  text-decoration: none;
+}
 
 
 #zitat	{	
-		font-size: 0.9em;
-		margin: auto;
-		width: 70%;
-		padding-right: 50px;
-		padding-top: 15px;
-		}
+  font-size: 0.9em;
+  margin: auto;
+  width: 70%;
+  padding-right: 50px;
+  padding-top: 15px;
+}
 
 
 #elbi {
-		width: 100%;
-		min-height: 100%;
-		text-align: center;
-		# margin: auto;
-		# overflow: auto;
-		# display: block;
-		# background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
-		}
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  # margin: auto;
+  # overflow: auto;
+  # display: block;
+  # background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
+}
 
-	
+
 #quadrat	{
-		background: url('grfx/shade2.png');
-		height: 200px;
-		width: 200px;
-		display: inline-block;
-		#margin-top: 10px;
-		#padding-bottom: 10px;
-		#margin: auto;
-		#float: left;
-		#text-align: center;
-		}
+  background: url('grfx/shade2.png');
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  #margin-top: 10px;
+  #padding-bottom: 10px;
+  #margin: auto;
+  #float: left;
+  #text-align: center;
+}
 
 img.zenterv	{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10;
-		margin-bottom: auto;
-		}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10;
+  margin-bottom: auto;
+}
 
 
 img.zenterh	{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 32;
-		margin-bottom: auto;
-		}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32;
+  margin-bottom: auto;
+}
 
 
 
