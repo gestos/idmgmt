@@ -1,0 +1,7 @@
+# Die HTTP-Authentifizierung aktivieren
+AuthType Basic
+# Der Name des Bereichs, dieser wird beim Aufruf im Browser angezeigt
+AuthName "shared stuff" 
+# GANZ WICHTIG: mit dem Shell Befehl "pwd" kann man sich den kompletten Server Pfad ausgeben lassen, denn die .htpasswd wird nur so gefunden.
+AuthUserFile  /home/strato/http/power/rid/97/52/53299752/htdocs/shared/.htpasswd
+require valid-user
