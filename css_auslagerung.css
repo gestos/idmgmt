@@ -1,10 +1,10 @@
-<style type="text/css">
+/* <style type="text/css"> */
 
 /* Referenz: www.noobcube.com/tutorials/html-css/fixed-header-footer-layout-a-beginners-guide-/
 Bild zentrieren: brunildo.org/test/img_center.html */
 
 body {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   height: 100%;
 }
@@ -20,6 +20,22 @@ img  		{
 }
 
 
+/* macht zusammen mit dem Body-Margin einen permanenten Rahmen um die Seite */
+
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: #FFF;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
 
 
 
@@ -32,14 +48,19 @@ img  		{
   top: 0;
   left: 15px;
   z-index: 1000;
-  background: url('grfx/nav.png') no-repeat;
+  background: url('grfx/rusty_small.png') no-repeat;
   text-align: center;
+  padding-top: 15px;
 }
 
 .imange a {
   display: block;
-  padding-top: 15%;
+  padding-top: 25%;
   padding-bottom: 15%;
+}
+
+.imange a img:hover {
+  box-shadow: 0 0 10px 10px #DEF5F8;
 }
 
 .imange a img {
@@ -47,14 +68,12 @@ img  		{
   height: 40px;
 }
 
-
-
 #container1 {
   width: 100%;
   min-height: 100%;
   margin: auto;
   background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
-  padding-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 
@@ -132,7 +151,7 @@ a.realtext:visited {
   width: 100%;
   # padding-left: 95px;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   background: #102449 url('grfx/bg_grad.jpg') repeat-x;
   margin: auto;
   overflow: auto;
@@ -197,15 +216,17 @@ a.ikone:visited {
   padding-top: 15px;
 }
 
-
-#elbi {
+.zentrierer {
   width: 100%;
-  min-height: 100%;
   text-align: center;
-  # margin: auto;
-  # overflow: auto;
-  # display: block;
-  # background: #2F5E10 url('grfx/bgreen2.gif') no-repeat;
+}
+
+
+.elbi {
+  display: inline-block;
+  width: 75%;
+  min-height: 100%;
+  margin-bottom: 25px;
 }
 
 
@@ -234,12 +255,11 @@ img.zenterh	{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 32;
+  margin-top: 25px;
   margin-bottom: auto;
 }
 
 
 
 
-</style>
-
+/* </style> */
