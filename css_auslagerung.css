@@ -19,6 +19,9 @@ img  		{
   border: none
 }
 
+a {
+  outline: 0;
+}
 
 /* macht zusammen mit dem Body-Margin einen permanenten Rahmen um die Seite */
 
@@ -218,32 +221,59 @@ a.ikone:visited {
   text-align: center;
 }
 
+.exrot_menu {
+  margin: 10px;
+  text-align: right;
+}
+
+.exrot_menu img {
+  height: 20px;
+  width: 20px;
+}
+
+.exrot_menu a img:hover {
+  box-shadow: 0 0 5px 5px rgba(68, 197, 240, 0.33);
+}
 
 .elbi {
   display: inline-block;
   width: 75%;
   min-height: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 1%;
+}
+.elbi_c {
+  display: inline-block;
+  width: 75%;
+  height: 50%;
+  margin-bottom: 1%;
+  overflow: hidden;
 }
 
 
-#quadrat	{
+.quadrat	{
   background: url('grfx/shade2.png');
   height: 200px;
   width: 200px;
   display: inline-block;
-  #margin-top: 10px;
-  #padding-bottom: 10px;
-  #margin: auto;
-  #float: left;
-  #text-align: center;
 }
+
+.elbi_c p.quadrat {
+  height: 80px;
+  width: 80px;
+}
+
+.elbi_c img.zenterh {
+  height: 60px;
+  width: 60px;
+}
+
+
 
 img.zenterv	{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10;
+  margin-top: 5%;
   margin-bottom: auto;
 }
 
@@ -252,7 +282,7 @@ img.zenterh	{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  margin-top: 12.5%;
   margin-bottom: auto;
 }
 
